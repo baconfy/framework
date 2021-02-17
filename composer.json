@@ -1,0 +1,40 @@
+{
+  "name": "baconfy/framework",
+  "description": "The Baconfy Framework.",
+  "keywords": [
+    "framework",
+    "baconfy"
+  ],
+  "license": "MIT",
+  "homepage": "https://baconfy.com",
+  "support": {
+    "issues": "https://github.com/baconfy/framework/issues",
+    "source": "https://github.com/baconfy/framework"
+  },
+  "authors": [
+    {
+      "name": "Renato Dehnhardt",
+      "email": "renatotkd@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "laravel/framework": "^8.12",
+    "baconfy/auth": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Baconfy\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
