@@ -1,12 +1,8 @@
 {
   "name": "baconfy/framework",
-  "description": "The Baconfy Framework.",
-  "keywords": [
-    "framework",
-    "baconfy"
-  ],
+  "description": "Baconfy Framework",
+  "type": "framework",
   "license": "MIT",
-  "homepage": "https://baconfy.com",
   "support": {
     "issues": "https://github.com/baconfy/framework/issues",
     "source": "https://github.com/baconfy/framework"
@@ -18,23 +14,25 @@
     }
   ],
   "require": {
-    "php": "^7.3|^8.0",
-    "laravel/framework": "^8.12",
+    "illuminate/support": "^8.0",
     "baconfy/auth": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "Baconfy\\": ""
+      "Baconfy\\": "src/"
     }
   },
   "extra": {
+    "laravel": {
+      "providers": [
+        "Baconfy\\BaconfyServiceProvider"
+      ],
+      "aliases": {
+        "Baconfy": "Baconfy\\BaconfyFacade"
+      }
+    },
     "branch-alias": {
       "dev-master": "1.x-dev"
     }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
